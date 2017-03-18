@@ -1,0 +1,82 @@
+/*公共部分*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.html，body,.wrap{
+     height: 100%;
+     width: 100%;
+}
+body{
+	background: #F1E169 /*颜色*/
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+     color: #fff;
+}
+a:active{
+	text-decoration: underline;
+	color: #000;
+}
+/*header部分*/ 
+header{
+	background: red;
+	width: 100px;
+	height: 50px;
+	display: flex;
+    font-size: 10px;
+    color: #fff;
+}
+.ff{
+	width: 40px;
+	height: 50px;
+
+}
+.frp,.flp{
+	height: 20px;
+	width: 25px;
+    margin: 8px 8px auto;
+}
+.ss{
+	flex: 1;
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 5px;
+   background-image: url(),url();
+   background-size: 20px ,20px;
+   background-repeat:no-repeat; /*不重复*/
+   background-position: left,right;/*居左居右*/ 
+}header figcaption{
+	text-align: center;
+}
+/*footer部分*/
+footer{
+	width: 100%;
+	height:50px;
+	background: ;
+	position: fixed;/*相对定位*/
+	bottom: 0;/*底部位置为0*/	
+}
+#footer_list.list_li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	width: 25%;
+	font-size: 10px;
+	text-align: center;
+}
+#footer_list.list_li:nth-child(1){
+	background: url(/*里面放图片*/) no-repeat;
+    background-size: 22px 21px;
+    background-position: top;
+
+}
+/*两张相同图片可以做到点击改变*/
+ #footer_list.list_li:nth-child(1):active{
+     background: url(/*里面放图片*/) no-repeat;
+     background-size: 22px 21px;
+     background-position: top;
+ }
